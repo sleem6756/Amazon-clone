@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>product</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="product.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- lg-barbarry-navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark barbarry-navbar-lg d-none d-lg-block"
+    >
+      <div class="container-fluid py-2 px-3">
+        <a class="navbar-brand me-4" href="./index.html">
+          <img src="./assets/Barbary.png" alt="Logo" height="27" />
+        </a>
+
+        <div class="d-flex align-items-center text-white me-4">
+          <div class="d-flex flex-column lh-1">
+            <small class="text-secondary" style="font-size: 0.7rem"
+              >Deliver to</small
+            >
+            <span>Egypt</span>
+          </div>
+        </div>
+        <!-- ////////////Search///////////// -->
+        <div class="flex-grow-1 mx-3">
+          <div class="input-group">
+            <button
+              class="btn btn-secondary dropdown-toggle rounded-0 rounded-start border-end border-dark"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              style="min-width: 90px"
+            >
+              Deals
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+            </ul>
+            <input
+              type="text"
+              class="form-control rounded-0"
+              placeholder="Search Barbarry"
+              aria-label="Search barbarry.eg"
+            />
+            <button
+              class="btn btn-warning rounded-0 rounded-end search-btn-barbarry"
+              type="button"
+            >
+              <img
+                src="./assets/search-icon copy.png"
+                alt=""
+                srcset=""
+                height="25"
+              />
+            </button>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center text-white">
+          <div class="nav-item dropdown me-4">
+            <a
+              class="nav-link dropdown-toggle text-white d-flex align-items-center"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="./assets/gb.svg" alt="" width="20" class="me-1" />
+              EN
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">عربي</a></li>
+            </ul>
+          </div>
+
+          <div class="me-4 nav-item dropdown">
+            <a
+              class="nav-link text-white d-flex flex-column lh-1"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <small class="text-secondary" style="font-size: 0.7rem"
+                >Hello, sign in</small
+              >
+              <span>Account & Lists</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li>
+                <button
+                  class="dropdown-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#signupModal"
+                  href="#"
+                >
+                  Sign Up
+                </button>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Your Account</a></li>
+            </ul>
+          </div>
+
+          <a href="#" class="nav-link text-white d-flex flex-column lh-1 me-4">
+            Orders
+          </a>
+
+          <a
+            href="./cart.html"
+            class="nav-link text-white d-flex align-items-center position-relative"
+          >
+            <img src="./assets/cart.PNG" alt="" width="30" class="me-1" />
+            Cart
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- ///////////////////lg-navbar-ALL///////////////////////// -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark barbarry-sub-navbar-lg d-none d-lg-block"
+    >
+      <div class="container-fluid px-3">
+        <div
+          class="flex-row flex-nowrap overflow-x-auto"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <a
+              class="nav-link text-white d-flex align-items-center me-3"
+              href="#"
+            >
+              <img src="./assets/bars.PNG" alt="" width="25" class="me-1" />
+              All
+            </a>
+            <a class="nav-link text-white me-3" href="./index.html"
+              >Today's Deals</a
+            >
+            <a class="nav-link text-white me-3" href="#">Mobile Phones</a>
+            <a class="nav-link text-white me-3" href="#">Electronics</a>
+            <a class="nav-link text-white me-3" href="#">Fashion</a>
+            <a class="nav-link text-white me-3" href="#">Prime</a>
+            <a class="nav-link text-white me-3" href="#">Video Games</a>
+            <a class="nav-link text-white me-3" href="#">Appliances</a>
+            <a class="nav-link text-white me-3" href="#">Home</a>
+            <a class="nav-link text-white me-3" href="#">Toys & Games</a>
+            <a class="nav-link text-white me-3" href="#">Grocery</a>
+            <a class="nav-link text-white me-3" href="#">Perfumes</a>
+            <a class="nav-link text-white me-3" href="#">Sell</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- /////////////////////lg-coupons-navbar//////////////// -->
+    <nav
+      class="navbar navbar-light bg-light barbarry-bottom-nav-lg d-none d-lg-block"
+    >
+      <div class="container-fluid px-3">
+        <div class="navbar-nav flex-row">
+          <a class="nav-link text-dark me-3" href="./index.html"
+            >Today's Deals</a
+          >
+          <a class="nav-link text-dark me-3" href="#">Buy More & Save</a>
+          <a class="nav-link text-dark me-3" href="#">Coupons</a>
+        </div>
+      </div>
+    </nav>
+    <!-- /////////////////////sm-navbar//////////////////// -->
+    <nav class="navbar navbar-dark bg-dark barbarry-navbar-sm d-lg-none">
+      <div class="container-fluid py-2 px-3">
+        <button
+          class="navbar-toggler me-3"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand me-auto" href="./index.html">
+          <img src="./assets/Barbary.png" alt="Logo" height="25" />
+        </a>
+
+        <div class="d-flex align-items-center">
+          <button
+            href="#"
+            class="nav-link text-white d-flex align-items-center me-3"
+            data-bs-toggle="modal"
+            data-bs-target="#signupModal"
+          >
+            <img src="./assets/person.PNG" alt="" width="30" class="me-1" />
+            Sign Up
+          </button>
+          <a
+            href="./cart.html"
+            class="nav-link text-white d-flex align-items-center position-relative"
+          >
+            <img src="./assets/cart.PNG" alt="" width="35" class="me-1" />
+          </a>
+        </div>
+
+        <div
+          class="offcanvas offcanvas-start bg-dark text-white"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Hello, Sign in
+            </h5>
+            <button
+              type="button"
+              class="btn-close text-reset btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Today's Deals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mobile Phones</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Your Account
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Your Orders</a></li>
+                  <li><a class="dropdown-item" href="#">Your Lists</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid px-3 pb-2">
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control rounded-start"
+            placeholder="Search in Deals"
+            aria-label="Search in Deals"
+          />
+          <button
+            class="btn btn-warning rounded-end search-btn-barbarry"
+            type="button"
+          >
+            <img
+              src="./assets/search-icon copy.png"
+              alt=""
+              width="25"
+              class="me-1"
+            />
+          </button>
+        </div>
+      </div>
+      <div class="px-3 pb-2 text-white d-flex align-items-center">
+        <img src="./assets/location.PNG" alt="" width="15" class="me-1" />
+
+        Deliver to Egypt
+      </div>
+    </nav>
+    <!-- //////////product-Content////////////// -->
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-lg-5 mb-4">
+          <div class="product-image-container">
+            <img
+              src="./assets/Adidas.jpg"
+              class="img-fluid rounded main-product-img"
+              alt="img-item"
+            />
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+          <h1 class="h3">Adidas unisex Shirt Run Sneaker</h1>
+          <div class="d-flex align-items-center mb-3">
+            <div class="text-warning">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <span class="ms-2">4.5 (1,890)</span>
+          </div>
+
+          <hr />
+
+          <h2 class="text-danger h4">EGP 9,999</h2>
+          <p class="text-muted">
+            List Price:
+            <span class="text-decoration-line-through">EGP 11,999.00</span>
+          </p>
+
+          <p>
+            Description: Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam.
+          </p>
+
+          <hr />
+
+          <div class="mb-3">
+            <h6 class="mb-2">Color:</h6>
+            <div class="d-flex">
+              <div
+                class="color-option active me-2"
+                style="background-color: #c0c0c0"
+              ></div>
+              <div
+                class="color-option me-2"
+                style="background-color: #000000"
+              ></div>
+              <div class="color-option" style="background-color: #556b2f"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="card p-3">
+            <h5 class="card-title">EGP 9,999</h5>
+            <p class="text-success fw-bold">In Stock</p>
+
+            <div class="mb-3">
+              <label for="quantity" class="form-label">Quantity:</label>
+              <select class="form-select" id="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+
+            <button class="btn btn-warning w-100 mb-2">Add to Card</button>
+            <button class="btn btn-primary w-100">Buy Now</button>
+
+            <hr />
+
+            <p class="text-muted">
+              Delivery: <span class="fw-bold">Sat, 10 Oct</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row my-5">
+        <div class="col-12">
+          <h2 class="h4 mb-4">Top reviews</h2>
+        </div>
+
+        <div class="col-12 mb-4">
+          <div class="card p-3">
+            <div class="d-flex align-items-center mb-2">
+              <img
+                src="./assets/p"
+                alt="user-img"
+                class="rounded-circle me-3"
+                style="width: 50px; height: 50px; object-fit: cover"
+              />
+              <div>
+                <h6 class="mb-0">user</h6>
+                <small class="text-muted">July 24, 2025</small>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center mb-2">
+              <div class="text-warning me-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+
+            <h5 class="card-title">Good</h5>
+            <p class="card-text">
+              "This product is really great! The build quality is excellent, and
+              the battery lasts a long time. I am very happy with my purchase
+              and highly recommend it."
+            </p>
+
+            <div class="d-flex align-items-center mt-3">
+              <button class="btn btn-outline-secondary btn-sm me-2">
+                <i class="fas fa-thumbs-up"></i> useful (12)
+              </button>
+              <a href="#" class="text-muted text-decoration-none small"
+                >Report</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 mb-4">
+          <div class="card p-3">
+            <div class="d-flex align-items-center mb-2">
+              <img
+                src="./assets/p"
+                alt="user-img"
+                class="rounded-circle me-3"
+                style="width: 50px; height: 50px; object-fit: cover"
+              />
+              <div>
+                <h6 class="mb-0">user</h6>
+                <small class="text-muted">July 24, 2025</small>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center mb-2">
+              <div class="text-warning me-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+
+            <h5 class="card-title">Good product but...</h5>
+            <p class="card-text">
+              "The product is good overall, but I had some minor shipping
+              issues. I hope they will be resolved in future releases."
+            </p>
+
+            <div class="d-flex align-items-center mt-3">
+              <button class="btn btn-outline-secondary btn-sm me-2">
+                <i class="fas fa-thumbs-up"></i> useful (3)
+              </button>
+              <a href="#" class="text-muted text-decoration-none small"
+                >Report</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="signupModal"
+      tabindex="-1"
+      aria-labelledby="signupModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="signupModalLabel">
+              Create a new account
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="fullName" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" />
+              </div>
+              <div class="mb-3">
+                <label for="confirmPassword" class="form-label">Confirm</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="confirmPassword"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <!-- /////////Back to top////////// -->
+      <div class="back-to-top">
+        <a href="#">Back to top</a>
+      </div>
+
+      <div class="main-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-3 mb-4 mb-md-0">
+              <h4>Get to Know Us</h4>
+              <ul>
+                <li><a href="#">About Amazon</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Amazon Science</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-3 mb-4 mb-md-0">
+              <h4>Shop with Us</h4>
+              <ul>
+                <li><a href="#">Your Account</a></li>
+                <li><a href="#">Your Orders</a></li>
+                <li><a href="#">Your Addresses</a></li>
+                <li><a href="#">Your Lists</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-3 mb-4 mb-md-0">
+              <h4>Make Money with Us</h4>
+              <ul>
+                <li><a href="#">Protect and build your brand</a></li>
+                <li><a href="#">Advertise Your Products</a></li>
+                <li><a href="#">Sell on Amazon</a></li>
+                <li><a href="#">Fulfillment by Amazon</a></li>
+                <li><a href="#">Supply to Amazon</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-3 mb-4 mb-md-0">
+              <h4>Let Us Help You</h4>
+              <ul>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Shipping & Delivery</a></li>
+                <li><a href="#">Returns & Replacements</a></li>
+                <li><a href="#">Recalls and Product Safety Alerts</a></li>
+                <li><a href="#">Amazon App Download</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-logo-section">
+        <div class="container text-center">
+          <img src="./assets/Barbary.png" alt="Logo" class="mb-3" />
+          <div class="d-flex justify-content-center">
+            <button class="btn me-2" style="width: 15%; color: #fff">
+              <span class="me-1">🌐</span>English
+            </button>
+            <button class="btn" style="width: 15%; color: #fff">
+              <span class="me-1">🇪🇬</span>Egypt
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-footer">
+        <div class="container text-center">
+          <div class="row footer-links mb-2">
+            <div class="col-6 col-md-3">
+              <a href="#">Amazon Advertising</a>
+              <p>Find, attract, and engage customers</p>
+            </div>
+            <div class="col-6 col-md-3">
+              <a href="#">Sell on Amazon</a>
+              <p>Start Selling Online Today!</p>
+            </div>
+            <div class="col-6 col-md-3 mt-3 mt-md-0">
+              <a href="#">Amazon Web Services</a>
+              <p>Scalable Cloud Computing Services</p>
+            </div>
+            <div class="col-6 col-md-3 mt-3 mt-md-0">
+              <a href="#">Goodreads</a>
+              <p>Book reviews & recommendations</p>
+            </div>
+          </div>
+
+          <div class="footer-links d-flex justify-content-center flex-wrap">
+            <a href="#">Conditions of Use & Sale</a>
+            <a href="#">Privacy Notice</a>
+            <a href="#">Interest-Based Ads</a>
+            <p class="w-100 mt-2">
+              ©1996-2023, Amazon.com, Inc. or its affiliates
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

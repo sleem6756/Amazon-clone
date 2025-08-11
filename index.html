@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>barbarry</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.css" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- lg-barbarry-navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark barbarry-navbar-lg d-none d-lg-block"
+    >
+      <div class="container-fluid py-2 px-3">
+        <a class="navbar-brand me-4" href="#">
+          <img src="./assets/Barbary.png" alt="Logo" height="27" />
+        </a>
+
+        <div class="d-flex align-items-center text-white me-4">
+          <div class="d-flex flex-column lh-1">
+            <small class="text-secondary" style="font-size: 0.7rem"
+              >Deliver to</small
+            >
+            <span>Egypt</span>
+          </div>
+        </div>
+        <!-- ////////////Search///////////// -->
+        <div class="flex-grow-1 mx-3">
+          <div class="input-group">
+            <button
+              class="btn btn-secondary dropdown-toggle rounded-0 rounded-start border-end border-dark"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              style="min-width: 90px"
+            >
+              Deals
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+            </ul>
+            <input
+              type="text"
+              class="form-control rounded-0"
+              placeholder="Search Barbarry"
+              aria-label="Search barbarry.eg"
+            />
+            <button
+              class="btn btn-warning rounded-0 rounded-end search-btn-barbarry"
+              type="button"
+            >
+              <img
+                src="./assets/search-icon copy.png"
+                alt=""
+                srcset=""
+                height="25"
+              />
+            </button>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center text-white">
+          <div class="nav-item dropdown me-4">
+            <a
+              class="nav-link dropdown-toggle text-white d-flex align-items-center"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="./assets/gb.svg" alt="" width="20" class="me-1" />
+              EN
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">عربي</a></li>
+            </ul>
+          </div>
+
+          <div class="me-4 nav-item dropdown">
+            <a
+              class="nav-link text-white d-flex flex-column lh-1"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <small class="text-secondary" style="font-size: 0.7rem"
+                >Hello, sign Up</small
+              >
+              <span>Account & Lists</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><button class="dropdown-item" data-bs-toggle="modal" data-bs-target="#signupModal" href="#">Sign Up</button></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Your Account</a></li>
+            </ul>
+          </div>
+
+          <a href="#" class="nav-link text-white d-flex flex-column lh-1 me-4">
+            Orders
+          </a>
+
+          <a
+            href="./cart.html"
+            class="nav-link text-white d-flex align-items-center position-relative"
+          >
+            <img src="./assets/cart.PNG" alt="" width="30" class="me-1" />
+            Cart
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- ///////////////////lg-navbar-ALL///////////////////////// -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark barbarry-sub-navbar-lg d-none d-lg-block"
+    >
+      <div class="container-fluid px-3">
+        <div
+          class="flex-row flex-nowrap overflow-x-auto"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <a
+              class="nav-link text-white d-flex align-items-center me-3"
+              href="#"
+            >
+              <img src="./assets/bars.PNG" alt="" width="25" class="me-1" />
+              All
+            </a>
+            <a class="nav-link text-white me-3" href="#">Today's Deals</a>
+            <a class="nav-link text-white me-3" href="#">Mobile Phones</a>
+            <a class="nav-link text-white me-3" href="#">Electronics</a>
+            <a class="nav-link text-white me-3" href="#">Fashion</a>
+            <a class="nav-link text-white me-3" href="#">Prime</a>
+            <a class="nav-link text-white me-3" href="#">Video Games</a>
+            <a class="nav-link text-white me-3" href="#">Appliances</a>
+            <a class="nav-link text-white me-3" href="#">Home</a>
+            <a class="nav-link text-white me-3" href="#">Toys & Games</a>
+            <a class="nav-link text-white me-3" href="#">Grocery</a>
+            <a class="nav-link text-white me-3" href="#">Perfumes</a>
+            <a class="nav-link text-white me-3" href="#">Sell</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- /////////////////////lg-coupons-navbar//////////////// -->
+    <nav
+      class="navbar navbar-light bg-light barbarry-bottom-nav-lg d-none d-lg-block"
+    >
+      <div class="container-fluid px-3">
+        <div class="navbar-nav flex-row">
+          <a class="nav-link text-dark me-3" href="#">Today's Deals</a>
+          <a class="nav-link text-dark me-3" href="#">Buy More & Save</a>
+          <a class="nav-link text-dark me-3" href="#">Coupons</a>
+        </div>
+      </div>
+    </nav>
+    <!-- /////////////////////sm-navbar//////////////////// -->
+    <nav class="navbar navbar-dark bg-dark barbarry-navbar-sm d-lg-none">
+      <div class="container-fluid py-2 px-3">
+        <button
+          class="navbar-toggler me-3"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand me-auto" href="#">
+          <img src="./assets/Barbary.png" alt="Logo" height="25" />
+        </a>
+
+        <div class="d-flex align-items-center">
+          <button
+            href="#"
+            class="nav-link text-white d-flex align-items-center me-3" data-bs-toggle="modal" data-bs-target="#signupModal"
+          >
+            <img src="./assets/person.PNG" alt="" width="30" class="me-1" />
+            Sign In
+          </button>
+          <a
+            href="./cart.html"
+            class="nav-link text-white d-flex align-items-center position-relative"
+          >
+            <img src="./assets/cart.PNG" alt="" width="35" class="me-1" />
+          </a>
+        </div>
+
+        <div
+          class="offcanvas offcanvas-start bg-dark text-white"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Hello, Sign in
+            </h5>
+            <button
+              type="button"
+              class="btn-close text-reset btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Today's Deals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mobile Phones</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Your Account
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Your Orders</a></li>
+                  <li><a class="dropdown-item" href="#">Your Lists</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid px-3 pb-2">
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control rounded-start"
+            placeholder="Search in Deals"
+            aria-label="Search in Deals"
+          />
+          <button
+            class="btn btn-warning rounded-end search-btn-barbarry"
+            type="button"
+          >
+            <img
+              src="./assets/search-icon copy.png"
+              alt=""
+              width="25"
+              class="me-1"
+            />
+          </button>
+        </div>
+      </div>
+      <div class="px-3 pb-2 text-white d-flex align-items-center">
+        <img src="./assets/location.PNG" alt="" width="15" class="me-1" />
+
+        Deliver to Egypt
+      </div>
+    </nav>
+    <!-- /////////////////buttons-container//////////////// -->
+    <div class="container-fluid px-0 mt-2">
+      <div class="scroll-buttons-wrapper">
+        <button class="scroll-arrow scroll-arrow-left" id="scrollLeftBtn">
+          <img src="./assets/left.PNG" alt="" width="20" />
+        </button>
+
+        <div class="buttons-container" id="buttonsContainer">
+          <button class="btn btn-outline-secondary btn-scroll-item text-nowrap">
+            Ends Tonight
+          </button>
+          <button class="btn btn-outline-secondary btn-scroll-item text-nowrap">
+            Trending
+          </button>
+          <button class="btn btn-outline-secondary btn-scroll-item text-nowrap">
+            Flash deals
+          </button>
+          <button class="btn btn-outline-secondary btn-scroll-item text-nowrap">
+            Last Chance deals
+          </button>
+          <button class="btn btn-outline-secondary btn-scroll-item text-nowrap">
+            Coupons
+          </button>
+          <button class="btn btn-outline-secondary btn-scroll-item text-nowrap">
+            Supermarket
+          </button>
+          <button class="btn btn-outline-secondary btn-scroll-item text-nowrap">
+            Health & Personal Care
+          </button>
+          <button class="btn btn-outline-secondary btn-scroll-item text-nowrap">
+            Home & Furniture
+          </button>
+          <button class="btn btn-outline-secondary btn-scroll-item text-nowrap">
+            Kitchen
+          </button>
+          <button class="btn btn-outline-secondary btn-scroll-item text-nowrap">
+            Super market
+          </button>
+          <button class="btn btn-outline-secondary btn-scroll-item text-nowrap">
+            Baby
+          </button>
+          <button class="btn btn-outline-secondary btn-scroll-item text-nowrap">
+            Toy
+          </button>
+          <button class="btn btn-outline-secondary btn-scroll-item text-nowrap">
+            More
+          </button>
+          <button class="btn btn-outline-secondary btn-scroll-item text-nowrap">
+            ________
+          </button>
+        </div>
+
+        <button class="scroll-arrow scroll-arrow-right" id="scrollRightBtn">
+          <img src="./assets/right.png" alt="" width="20" />
+        </button>
+
+        <!-- Filter -->
+
+        <div class="d-lg-none">
+          <button
+            class="btn btn-outline-secondary mx-2"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasFilter"
+            aria-controls="offcanvasFilter"
+          >
+            Filter
+          </button>
+        </div>
+
+        <!-- ///////////////////////-filter-offcanvas-bottom///////////////// -->
+        <div
+          class="offcanvas offcanvas-bottom bg-light"
+          tabindex="-1"
+          id="offcanvasFilter"
+          aria-labelledby="offcanvasFilterLabel"
+        >
+          <div class="offcanvas-header bg-dark text-white">
+            <h5 class="offcanvas-title" id="offcanvasFilterLabel">Filter By</h5>
+            <button
+              type="button"
+              class="btn-close text-reset btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <h5 class="card-title mb-3">Department</h5>
+            <ul class="list-unstyled sidebar-filter-list">
+              <li>
+                <input
+                  type="checkbox"
+                  id="allDeptOffcanvas"
+                  class="form-check-input me-2"
+                /><label for="allDeptOffcanvas">All</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="artsCraftsOffcanvas"
+                  class="form-check-input me-2"
+                /><label for="artsCraftsOffcanvas">Arts & Crafts</label>
+              </li>
+            </ul>
+
+            <hr />
+
+            <h5 class="card-title mb-3">Brands</h5>
+            <ul class="list-unstyled sidebar-filter-list">
+              <li>
+                <input
+                  type="checkbox"
+                  id="adidasOffcanvas"
+                  class="form-check-input me-2"
+                /><label for="adidasOffcanvas">Adidas</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ///////////////////aside//////////////////// -->
+    <div class="container-fluid mt-3">
+      <div class="row">
+        <aside class="col-lg-3 d-none d-lg-block">
+          <div class="card border-0">
+            <div class="card-body p-0 m-1">
+              <h5 class="card-title mb-3">Department</h5>
+              <ul class="list-unstyled sidebar-filter-list">
+                <li>
+                  <input
+                    type="checkbox"
+                    id="allDept"
+                    class="form-check-input me-2"
+                  /><label for="allDept">All</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="artsCrafts"
+                    class="form-check-input me-2"
+                  /><label for="artsCrafts">Arts & Crafts</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="automotive"
+                    class="form-check-input me-2"
+                  /><label for="automotive">Automotive</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="babyProducts"
+                    class="form-check-input me-2"
+                  /><label for="babyProducts">Baby Products</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="beauty"
+                    class="form-check-input me-2"
+                  /><label for="beauty">Beauty</label>
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none small">See more</a>
+                </li>
+              </ul>
+
+              <hr />
+
+              <h5 class="card-title mb-3">Brands</h5>
+              <ul class="list-unstyled sidebar-filter-list">
+                <li>
+                  <input
+                    type="checkbox"
+                    id="adidas"
+                    class="form-check-input me-2"
+                  /><label for="adidas">Adidas</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="whiteEagle"
+                    class="form-check-input me-2"
+                  /><label for="whiteEagle">White Eagle</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="bengoo"
+                    class="form-check-input me-2"
+                  /><label for="bengoo">Bengoo</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="hp"
+                    class="form-check-input me-2"
+                  /><label for="hp">HP</label>
+                </li>
+                <li>
+                  <a href="#" class="text-decoration-none small">See more</a>
+                </li>
+              </ul>
+
+              <hr />
+
+              <h5 class="card-title mb-3">Customer Reviews</h5>
+              <ul class="list-unstyled sidebar-filter-list">
+                <li>
+                  <input
+                    type="checkbox"
+                    id="allReviews"
+                    class="form-check-input me-2"
+                  /><label for="allReviews">All</label>
+                </li>
+              </ul>
+
+              <hr />
+
+              <h5 class="card-title mb-3">Price</h5>
+              <ul class="list-unstyled sidebar-filter-list">
+                <li>
+                  <a href="#" class="text-decoration-none text-dark"
+                    >EGP 0 - EGP 100,000</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+        <!--///////////////////main//////////////////////////////////// -->
+
+        <main class="col-12 col-lg-9">
+          <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4">
+            <a href="./product.html"
+              ><div class="col">
+                <div class="card h-100 main-product-card">
+                  <div class="text-center p-3">
+                    <img
+                      src="./assets/Adidas.jpg"
+                      class="card-img-top img-fluid"
+                      alt="Product Image"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-title">Adidas Unisex Shirt Run Sneaker</h6>
+                  </div>
+                  <div class="card-footer bg-white border-0">
+                    <p class="card-text text-danger fw-bold mb-0">EGP 899.00</p>
+                    <p class="text-muted small text-decoration-line-through">
+                      EGP 1299.00
+                    </p>
+                  </div>
+                </div>
+              </div></a
+            >
+            <a href="./product.html"
+              ><div class="col">
+                <div class="card h-100 main-product-card">
+                  <div class="text-center p-3">
+                    <img
+                      src="./assets/Swim-Shorts.jpg"
+                      class="card-img-top img-fluid"
+                      alt="Product Image"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-title">Men's Swim Shorts</h6>
+                  </div>
+                  <div class="card-footer bg-white border-0">
+                    <p class="card-text text-danger fw-bold mb-0">EGP 399.00</p>
+                    <p class="text-muted small text-decoration-line-through">
+                      EGP 449.00
+                    </p>
+                  </div>
+                </div>
+              </div></a
+            >
+            <a href="./product.html"
+              ><div class="col">
+                <div class="card h-100 main-product-card">
+                  <div class="text-center p-3">
+                    <img
+                      src="./assets/Stereo.jpg"
+                      class="card-img-top img-fluid"
+                      alt="Product Image"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-title">Stereo Headset for PS4, PC, Xbox</h6>
+                  </div>
+                  <div class="card-footer bg-white border-0">
+                    <p class="card-text text-danger fw-bold mb-0">EGP 249.00</p>
+                    <p class="text-muted small text-decoration-line-through">
+                      EGP 279.00
+                    </p>
+                  </div>
+                </div>
+              </div></a
+            >
+            <a href="./product.html"
+              ><div class="col">
+                <div class="card h-100 main-product-card">
+                  <div class="text-center p-3">
+                    <img
+                      src="./assets/HP-Smart.jpg"
+                      class="card-img-top img-fluid"
+                      alt="Product Image"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-title">
+                      HP Smart Tank 725 Printer wireless
+                    </h6>
+                  </div>
+                  <div class="card-footer bg-white border-0">
+                    <p class="card-text text-danger fw-bold mb-0">
+                      EGP 5999.00
+                    </p>
+                    <p class="text-muted small text-decoration-line-through">
+                      EGP 6800.00
+                    </p>
+                  </div>
+                </div>
+              </div></a
+            >
+            <a href="./product.html"
+              ><div class="col">
+                <div class="card h-100 main-product-card">
+                  <div class="text-center p-3">
+                    <img
+                      src="./assets/adidas-mens-Runfalcon.jpg"
+                      class="card-img-top img-fluid"
+                      alt="Product Image"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-title">
+                      Adidas mens Runfalcon 5 Running Shoes
+                    </h6>
+                  </div>
+                  <div class="card-footer bg-white border-0">
+                    <p class="card-text text-danger fw-bold mb-0">EGP 799.00</p>
+                    <p class="text-muted small text-decoration-line-through">
+                      EGP 999.00
+                    </p>
+                  </div>
+                </div>
+              </div></a
+            >
+            <a href="./product.html"
+              ><div class="col">
+                <div class="card h-100 main-product-card">
+                  <div class="text-center p-3">
+                    <img
+                      src="./assets/Calculator.jpg"
+                      class="card-img-top img-fluid"
+                      alt="Product Image"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-title">
+                      Casio fx 99 Nesplus-2wdlv Calculator
+                    </h6>
+                  </div>
+                  <div class="card-footer bg-white border-0">
+                    <p class="card-text text-danger fw-bold mb-0">EGP 299.00</p>
+                    <p class="text-muted small text-decoration-line-through">
+                      EGP 529.00
+                    </p>
+                  </div>
+                </div>
+              </div></a
+            >
+            <a href="./product.html"
+              ><div class="col">
+                <div class="card h-100 main-product-card">
+                  <div class="text-center p-3">
+                    <img
+                      src="./assets/Athletic.jpg"
+                      class="card-img-top img-fluid"
+                      alt="Product Image"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-title">Rumba Women's Athletic</h6>
+                  </div>
+                  <div class="card-footer bg-white border-0">
+                    <p class="card-text text-danger fw-bold mb-0">EGP 699.00</p>
+                    <p class="text-muted small text-decoration-line-through">
+                      EGP 777.00
+                    </p>
+                  </div>
+                </div>
+              </div></a
+            >
+            <a href="./product.html"
+              ><div class="col">
+                <div class="card h-100 main-product-card">
+                  <div class="text-center p-3">
+                    <img
+                      src="./assets/Fly-Swatter.jpg"
+                      class="card-img-top img-fluid"
+                      alt="Product Image"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-title">YISSWIC Electric Fly Swatter</h6>
+                  </div>
+                  <div class="card-footer bg-white border-0">
+                    <p class="card-text text-danger fw-bold mb-0">EGP 159.00</p>
+                    <p class="text-muted small text-decoration-line-through">
+                      EGP 189.00
+                    </p>
+                  </div>
+                </div>
+              </div></a
+            >
+          </div>
+          <div class="container-fluid py-4 bg-light">
+            <div class="row justify-content-center">
+              <div class="col-12 text-center">
+                <button class="btn btn-outline-primary btn-lg custom-view-more">
+                  View more deals
+                </button>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <!-- ######################################## -->
+    <!-- <div class="container my-5">
+    <h2 class="text-center mb-4">Customers who viewed items in your browsing history also</h2>
+    <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                    <div class="col">
+                        <div class="product-card">
+                            <a href=""><img src="./assets/adidas-mens-Runfalcon.jpg" class="img-fluid mb-2" alt="items 1">
+                            <h5>product</h5>
+                            <p class="text-muted">EGP 699.99</p>
+                        </div></a>
+                    </div>
+                    <div class="col">
+                        <div class="product-card">
+                           <a href=""><img src="./assets/Swim-Shorts.jpg" class="img-fluid mb-2" alt="items 2">
+                            <h5>product</h5>
+                            <p class="text-muted">EGP 925.00</p>
+                        </div></a>
+                    </div>
+                    <div class="col">
+                        <div class="product-card">
+                            <a href=""><img src="./assets/Adidas.jpg" class="img-fluid mb-2" alt="items 3">
+                            <h5>product</h5>
+                            <p class="text-muted">EGP 999.00</p>
+                        </div></a>
+                    </div>
+                    <div class="col">
+                      <div class="product-card">
+                     <a href=""><img src="./assets/Calculator.jpg" class="img-fluid mb-2" alt="items 4">
+                            <h5>product</h5>
+                            <p class="text-muted">EGP 1,049.00</p>
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                    <div class="col">
+                        <div class="product-card">
+                            <a href=""><img src="./assets/adidas-mens-Runfalcon.jpg" class="img-fluid mb-2" alt="items 5">
+                            <h5>product</h5>
+                            <p class="text-muted">EGP 900.00</p>
+                        </div></a>
+                    </div>
+                    <div class="col">
+                        <div class="product-card">
+                            <a href=""><img src="./assets/HP-Smart.jpg" class="img-fluid mb-2" alt="items 6">
+                            <h5>product</h5>
+                            <p class="text-muted">EGP 759.99</p>
+                        </div></a>
+                    </div>
+                    <div class="col">
+                        <div class="product-card">
+                            <a href=""><img src="./assets/Swim-Shorts.jpg" class="img-fluid mb-2" alt="items 7">
+                            <h5>product</h5>
+                            <p class="text-muted">EGP 850.00</p>
+                        </div></a>
+                    </div>
+                    <div class="col">
+                        <div class="product-card">
+                            <a href=""><img src="./assets/Stereo.jpg" class="img-fluid mb-2" alt="items 8">
+                            <h5>product</h5>
+                            <p class="text-muted">EGP 650.00</p>
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">prev</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">next</span>
+        </button>
+    </div>
+</div> -->
+
+    <!-- ////////////////////Sign Up-footer//////////////////// -->
+    <div
+      style="
+        height: 35vh;
+        width: 100%;
+        background-color: #fff;
+        padding: 50px;
+        text-align: center;
+      "
+    >
+      <h2>See personalized recommendations</h2>
+      <button class="btn btn-warning mt-3" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+      <p class="mt-2">New customer? <a href="#">Start here.</a></p>
+    </div>
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">Create a new account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="fullName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="fullName">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password">
+          </div>
+          <div class="mb-3">
+            <label for="confirmPassword" class="form-label">Confirm</label>
+            <input type="password" class="form-control" id="confirmPassword">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- /////////////////footer////////////////////// -->
+    <footer>
+      <!-- /////////Back to top////////// -->
+      <div class="back-to-top">
+        <a href="#">Back to top</a>
+      </div>
+
+      <div class="main-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-3 mb-4 mb-md-0">
+              <h4>Get to Know Us</h4>
+              <ul>
+                <li><a href="#">About Amazon</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Amazon Science</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-3 mb-4 mb-md-0">
+              <h4>Shop with Us</h4>
+              <ul>
+                <li><a href="#">Your Account</a></li>
+                <li><a href="#">Your Orders</a></li>
+                <li><a href="#">Your Addresses</a></li>
+                <li><a href="#">Your Lists</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-3 mb-4 mb-md-0">
+              <h4>Make Money with Us</h4>
+              <ul>
+                <li><a href="#">Protect and build your brand</a></li>
+                <li><a href="#">Advertise Your Products</a></li>
+                <li><a href="#">Sell on Amazon</a></li>
+                <li><a href="#">Fulfillment by Amazon</a></li>
+                <li><a href="#">Supply to Amazon</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-3 mb-4 mb-md-0">
+              <h4>Let Us Help You</h4>
+              <ul>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Shipping & Delivery</a></li>
+                <li><a href="#">Returns & Replacements</a></li>
+                <li><a href="#">Recalls and Product Safety Alerts</a></li>
+                <li><a href="#">Amazon App Download</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-logo-section">
+        <div class="container text-center">
+          <img src="./assets/Barbary.png" alt="Logo" class="mb-3" />
+          <div class="d-flex justify-content-center">
+            <button class="btn me-2" style="width: 15%; color: #fff">
+              <span class="me-1">🌐</span>English
+            </button>
+            <button class="btn" style="width: 15%; color: #fff">
+              <span class="me-1">🇪🇬</span>Egypt
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-footer">
+        <div class="container text-center">
+          <div class="row footer-links mb-2">
+            <div class="col-6 col-md-3">
+              <a href="#">Amazon Advertising</a>
+              <p>Find, attract, and engage customers</p>
+            </div>
+            <div class="col-6 col-md-3">
+              <a href="#">Sell on Amazon</a>
+              <p>Start Selling Online Today!</p>
+            </div>
+            <div class="col-6 col-md-3 mt-3 mt-md-0">
+              <a href="#">Amazon Web Services</a>
+              <p>Scalable Cloud Computing Services</p>
+            </div>
+            <div class="col-6 col-md-3 mt-3 mt-md-0">
+              <a href="#">Goodreads</a>
+              <p>Book reviews & recommendations</p>
+            </div>
+          </div>
+
+          <div class="footer-links d-flex justify-content-center flex-wrap">
+            <a href="#">Conditions of Use & Sale</a>
+            <a href="#">Privacy Notice</a>
+            <a href="#">Interest-Based Ads</a>
+            <p class="w-100 mt-2">
+              ©1996-2023, Amazon.com, Inc. or its affiliates
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
